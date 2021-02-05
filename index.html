@@ -47,6 +47,7 @@
 }
 
 body {
+  max-width: 100vw; overflow-x: hidden;
   background-color: #2067AA;
   margin: 0;
   padding: 0 0 0 0;
@@ -78,7 +79,7 @@ body {
   cursor: default;
 }
 
-/*prevent many large-by-comparison ripples by shrinking the height*/
+
 @media (max-width: 50em) {
 
 
@@ -231,11 +232,12 @@ p {
 }
 
 
-footer{text-align: center; margin: 2em; padding-top:1em; border-top: .2em solid }
+.footer{text-align: center; margin: 2em 0; max-width: 100vw; padding-top:1em; border-top: .2em solid }
 
-footer span{display:inline-block; padding: 1em;}
+.footer span{display:inline-block; padding: 1em;}
 
-footer a{color:white; text-decoration: none;}
+.footer a{color:white; text-decoration: none;}
+
 </style>
 </head>
 
@@ -357,13 +359,14 @@ Steve: 0423 181 744</a>
 
 
 
-<footer> 
+<div class="footer">  
+  <p>
   <span> <a target="_blank" href="https://fswqap.worksafe.qld.gov.au/elis/contractorDetails.do?dispatch=view&key.id=4852599">QLD Electrical Contractors License No: #84197</a></span>    
   <span> ABN 80986812315 </span>   
   <span> ARC License: L138160</span> 
+</p>
+</div>
 
-
-</footer>
 </section>
   </body>
 
